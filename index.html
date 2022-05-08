@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVE updates,Latest News,Breaking News</title>
+
+    
+
+</head>
+
+
+  
+
+    <style>
+        
+     *{  padding: 0%;
+        margin: 0%;
+        text-decoration: none;
+     }
+     #navbar1{
+         width: 100%;
+         height: 90px;
+         background-color: #000000;
+         display: flex;
+         justify-content: space-around;
+         box-sizing: border-box;
+     }
+     .nav{
+         border:2px solid rgb(217, 203, 203) ;
+         width: 25%;
+         height: auto;
+         text-align: center;
+         box-sizing: border-box;
+         
+     }
+     .nav>img{
+         margin: auto;
+         margin-top: 20px;
+         height: 35;
+         width: 105;
+         
+     }
+     #navbar2{
+         width: 100%;
+         height: 80px;
+         border: 1px solid lightgray;
+        text-decoration: none;
+        display: flex;
+        
+        font-size:xx-large;
+        align-items: center;
+        justify-content: space-around;
+
+     }
+
+     a{
+         position: relative;
+         color: #474747;
+         
+     }
+     a:after{
+         content: "";
+         position: absolute;
+         background-color: #ff3c78;
+        height: 3px;
+        width: 0;
+          left: 0;
+          bottom: -10px;
+         transition: 0.1s;
+     }
+     
+     a:hover:after{
+         width:100%
+     }
+     .nav2{
+         border-right:2px solid lightgray ;
+         padding: 5px 15px;
+     }
+     #content{
+         display: grid;
+         grid-template-columns: 65% 25%;
+         grid-template-rows: 700px 700px 700px 700px 700px 700px 700px;
+         grid-gap: 30px;
+         margin-left: 150px;
+     }
+     #content>div{
+         
+         box-sizing: border-box;
+     }
+     #content>div>img{
+         width: 100%;
+         vertical-align: top;
+         height: 75%;
+     }
+     #content>div>h2{
+         padding:5px 10px;
+         font-size: 30px;
+     }
+     #content>div>h1{
+         padding:1px 10px;
+         font-size: 50px;
+     }
+     #content>div>P{
+         padding:1px 10px;
+         font-size: 25px;
+     }
+     #navbar2+div{
+         display: flex;
+         padding:15px ;
+         font-size: 30px;
+         justify-content: space-around;
+         align-items: center;
+
+     }
+     span>h1{
+        padding:15px ;
+         font-size: 50px;
+     }
+     /* form */
+     form{
+         font-size: larger;
+         
+     }
+     form>input{
+         width: 100%;
+         height: 40px;
+         border-radius: 5px;
+         padding: 5px 5px;
+         font-size: large;
+     }
+     #btn{
+         width: 70%;
+         height:40px ;
+         margin-top:10px;
+         border-radius: 5px;
+         background-color: yellowgreen;
+     }
+     
+   
+    </style>
+</head>
+<body>
+    
+    <div id="navbar1">
+        
+        <div class="nav menu btn"><i class="fa-solid fa-bars" style="color: red"></i></div>
+        <div class="nav image"><img src="https://www.firstpost.com/static/images/fp-desk-logo.png" alt="firstpost"></div>
+        <div class="nav"></div>
+    </div>
+
+    <div id="navbar2">
+        <div class="nav2"><a href="health.html" target="_blank">Health</a></div>
+        <div class="nav2"><a href="arts.html" target="_blank">India</a></div>
+        <div class="nav2"><a href="world.html" target="_blank">World</a></div>
+        <div class="nav2"><a href="arts.html" target="_blank">Arts & Culture</a></div>
+        <div class="nav2"><a href="sports.html" target="_blank">Sports</a></div>
+        <div class="nav2"><a href="entertainment.html" target="_blank">Entertainment</a></div>
+        <div class="nav2"><a href="tech.html" target="_blank">Tech</a></div>
+        <div class="nav2"><a href="cricket.html" target="_blank">Cricket</a></div>
+        <div id="ads"class="nav2" ><a href="">IPL 2022</a></div>
+        <div id="ads" class="nav2"><a href="">IPL 2022</a></div>
+        <div id="ads"class="nav2" ><a href="">IPL 2022</a></div>
+        <div id="ads" class="nav2"><a href="">IPL 2022</a></div>
+        <div id="ads" class="nav2"><a href="">IPL 2022</a></div>
+    </div>
+    <!-- --------------------------------------------------------- -->
+    <div><h1 style="font-size:80px; text-align:center">THE BIG STORY</h1> </div>
+    <div id="content">
+        
+        <div class="news">
+            <img src="https://images.firstpost.com/wp-content/uploads/2022/05/bagga1.jpg?impolicy=website&width=640&height=362" alt="">
+             <h2>POLITICS</h2>
+             <h1>Lorem eos libero autem est obcaecati .</h1>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dolorem qui dolores eligendi odit, voluptate dolorum culpa veniam, fugiat asperiores ut illo rem esse fuga perferendis et. Eum, laboriosam quisquam.</p>
+
+        </div>
+        <div  class="news ads">
+            <!-- form-------------------------------------- -->
+          <form id="signup" >  
+            <h1>Subscribe to our foreign policy newsletter</h1>
+            
+            <p>Sign up for a weekly curated briefing of the most important strategic affairs stories from across the world.</p>
+            <h2>Email Address <span style="color: red">*</span> </h2>
+            <input id= "email" type="text" placeholder="Enter Email">
+            <input type="submit" id="btn" value="SUBSCRIBE">
+        </form>
+        </div>
+        <div class="news">
+            <img src="https://images.firstpost.com/wp-content/uploads/2022/05/bagga1.jpg?impolicy=website&width=640&height=362" alt="">
+             <h2>POLITICS</h2>
+             <h1>Lorem eos libero autem est obcaecati .</h1>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dolorem qui dolores eligendi odit, voluptate dolorum culpa veniam, fugiat asperiores ut illo rem esse fuga perferendis et. Eum, laboriosam quisquam.</p>
+
+        </div>
+        <div class="news ads"><span><h1>Most Read</h1></span> 
+            <h1>1</h1>
+            <h1>Lorem eos libero autem est obcaecati .</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dolorem qui dolores eligendi odit, voluptate dolorum culpa veniam, fugiat asperiores ut illo rem esse fuga perferendis et. Eum, laboriosam quisquam.</p>
+        </div>
+        <div class="news">
+            <img src="https://images.firstpost.com/wp-content/uploads/2022/05/bagga1.jpg?impolicy=website&width=640&height=362" alt="">
+             <h2>POLITICS</h2>
+             <h1>Lorem eos libero autem est obcaecati .</h1>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dolorem qui dolores eligendi odit, voluptate dolorum culpa veniam, fugiat asperiores ut illo rem esse fuga perferendis et. Eum, laboriosam quisquam.</p>
+
+        </div>
+        <div class="news ads"><span><h1>2</h1></span> 
+            <h1>Lorem eos libero autem est obcaecati .</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dolorem qui dolores eligendi odit, voluptate dolorum culpa veniam, fugiat asperiores ut illo rem esse fuga perferendis et. Eum, laboriosam quisquam.</p>
+        </div>
+        <div class="news">
+            <img src="https://images.firstpost.com/wp-content/uploads/2022/05/bagga1.jpg?impolicy=website&width=640&height=362" alt="">
+             <h2>POLITICS</h2>
+             <h1>Lorem eos libero autem est obcaecati .</h1>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dolorem qui dolores eligendi odit, voluptate dolorum culpa veniam, fugiat asperiores ut illo rem esse fuga perferendis et. Eum, laboriosam quisquam.</p>
+
+        </div>
+        <div class="news ads"><span><h1>3</h1></span> 
+            <h1>Lorem eos libero autem est obcaecati .</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dolorem qui dolores eligendi odit, voluptate dolorum culpa veniam, fugiat asperiores ut illo rem esse fuga perferendis et. Eum, laboriosam quisquam.</p>
+        </div>
+        <div class="news">
+            <img src="https://images.firstpost.com/wp-content/uploads/2022/05/bagga1.jpg?impolicy=website&width=640&height=362" alt="">
+             <h2>POLITICS</h2>
+             <h1>Lorem eos libero autem est obcaecati .</h1>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dolorem qui dolores eligendi odit, voluptate dolorum culpa veniam, fugiat asperiores ut illo rem esse fuga perferendis et. Eum, laboriosam quisquam.</p>
+
+        </div>
+        <div class="news ads"><span><h1>4</h1></span> 
+            <h1>Lorem eos libero autem est obcaecati .</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dolorem qui dolores eligendi odit, voluptate dolorum culpa veniam, fugiat asperiores ut illo rem esse fuga perferendis et. Eum, laboriosam quisquam.</p>
+        </div>
+
+    </div>
+    
+</body>
+
+
+</html> 
+ <script>
+  var butn = document.getElementById("signup")
+  butn.addEventListener("submit",function(event){
+      event.preventDefault
+      document.getElementById("email") = ""
+      alert("Thanks for subscribing!")
+  })
+ 
+  
+  
+
+  
+
+  
+</script>
+
+
+
+
+
+
